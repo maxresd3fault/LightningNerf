@@ -32,12 +32,12 @@ public class LightningNerf extends JavaPlugin {
 		}
 		quietMode = cfg.getBoolean("quiet-mode", false);
 		
-    	getServer().getPluginManager().registerEvent(Event.Type.BLOCK_IGNITE, new MyBlockListener(), Event.Priority.Normal, this);
+		getServer().getPluginManager().registerEvent(Event.Type.BLOCK_IGNITE, new MyBlockListener(), Event.Priority.Normal, this);
     	
-    	if(quietMode) {
-    		log("Quiet mode enabled - plugin will not announce blocked lightning fires");
-    	}
-    	log("Enabled");
+		if(quietMode) {
+			log("Quiet mode enabled - plugin will not announce blocked lightning fires");
+		}
+		log("Enabled");
 	}
 	
 	@Override
