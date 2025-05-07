@@ -20,8 +20,8 @@ public class LightningNerf extends JavaPlugin {
 	public void onEnable() {
 		
 		if (!getDataFolder().exists()) {
-	    	getDataFolder().mkdirs();
-	    }
+			getDataFolder().mkdirs();
+		}
 		File configFile = new File(getDataFolder(), "config.yml");
 		cfg = new Configuration(configFile);
 		if (!configFile.exists()) {
@@ -42,8 +42,8 @@ public class LightningNerf extends JavaPlugin {
 	
 	@Override
 	public void onDisable() {
-    	log("Disabled");
-    }
+		log("Disabled");
+	}
 	
 	public void log(String s) {
 		Logger.getLogger("Minecraft").info("[LightningNerf " + VERSION + "]: " + s);
