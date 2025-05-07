@@ -1,0 +1,5 @@
+name: LightningNerf
+main: maxresdefault.LightningNerf
+author: maxresdefault
+version: 1
+description: Prevent lightning strikes from causing fire.
